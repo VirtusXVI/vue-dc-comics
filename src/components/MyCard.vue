@@ -33,7 +33,7 @@
                             <img src="../assets/img/buy-comics-shop-locator.png" alt="">
                         </div>
                         <div class="card-text">
-                            <span>COMIC SJOPò LOCATOR</span>
+                            <span>COMIC SHOP LOCATOR</span>
                         </div>
                     </div>
                     <div class="card">
