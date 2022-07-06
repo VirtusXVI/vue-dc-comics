@@ -7,21 +7,17 @@
             </div>
         </div>
     </section>
-    <section>
-        <div class="lower-main-adjustments">
-            <div class="container">
-                <MyCard/>
-            </div>
-        </div>
-    </section>
+    <MyCards/>
   </div>
 </template>
 
 <script>
-import MyCard from "./MyCard.vue"
+import MyCards from "./MyCard.vue"
 export default {
     name: "MyMain",
-    MyCard,
+    components:{
+        MyCards,
+    }
 }
 </script>
 
@@ -31,11 +27,6 @@ export default {
     .upper-main-adjustments{
         padding: 3rem;
         background-color: black;
-        color: white;
-    }
-    .lower-main-adjustments{
-        padding: 3rem;
-        background-color: $brand_main_color;
         color: white;
     }
 </style>
