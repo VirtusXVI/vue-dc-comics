@@ -10,7 +10,7 @@
     <section>
         <div class="lower-main-adjustments">
             <div class="container">
-                
+                <MyCard/>
             </div>
         </div>
     </section>
@@ -18,8 +18,10 @@
 </template>
 
 <script>
+import MyCard from "./MyCard.vue"
 export default {
     name: "MyMain",
+    MyCard,
 }
 </script>
 
