@@ -6,8 +6,13 @@
 
             </div>
             <div class="container">
-                <div class="cards-container">
-                    <h2>ciao</h2>
+                <div class="comics-container">
+                    <div class="label">
+                        <span>CURRENT SERIES</span>
+                    </div>
+                    <div class="cards-container">
+                        <ComicCard />
+                    </div>
                 </div>
             </div>
         </div>
@@ -17,12 +22,16 @@
 </template>
 
 <script>
-import MyCards from "./MyCard.vue"
-export default {
-    name: "MyMain",
-    components:{
-        MyCards,
-    }
+    import MyCards from "./MyCard.vue"
+    // import ComicData from "../assets/dc-comics.json"
+    import ComicCard from "./ComicCard.vue"
+    export default {
+        name: "MyMain",
+        components:{
+            MyCards,
+            // ComicData,
+            ComicCard
+        }
 }
 </script>
 
@@ -37,7 +46,26 @@ export default {
         background-image: url(../assets/img/jumbotron.jpg);
         height: 400px;
     }
-    .cards-container{
+    .comics-container{
         padding: 3rem 0;
+        position: relative;
+    }
+    // COMICS CARDS SECTION
+    .label{
+        display: inline-block;
+        padding: 0.7rem 1.3rem;
+        background-color: $brand_main_color;
+        position: absolute;
+        top: -30px;
+        left: 0;
+    }
+    .label span{
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+    // COMICS
+    .cards-container{
+        width: 97%;
+        margin: 0 auto;
     }
 </style>
