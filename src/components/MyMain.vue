@@ -10,26 +10,29 @@
                     <div class="label">
                         <span>CURRENT SERIES</span>
                     </div>
-                    <div class="cards-container">
-                        <ComicCard />
-                    </div>
+                    <ComicCard />
+                </div>
+            </div>
+            <div class="container">
+                <div class="button-adjustments">
+                    <span>LOAD MORE</span>
                 </div>
             </div>
         </div>
     </section>
-    <MyCards/>
+    <section>
+        <MyCards/>
+    </section>
   </div>
 </template>
 
 <script>
     import MyCards from "./MyCard.vue"
-    // import ComicData from "../assets/dc-comics.json"
     import ComicCard from "./ComicCard.vue"
     export default {
         name: "MyMain",
         components:{
             MyCards,
-            // ComicData,
             ComicCard
         }
 }
@@ -47,7 +50,7 @@
         height: 400px;
     }
     .comics-container{
-        padding: 3rem 0;
+        padding-top: 3rem;
         position: relative;
     }
     // COMICS CARDS SECTION
@@ -63,9 +66,14 @@
         font-size: 1.6rem;
         font-weight: bold;
     }
-    // COMICS
-    .cards-container{
-        width: 97%;
-        margin: 0 auto;
+    .button-adjustments{
+        display: flex;
+        justify-content: center;
+        padding: 1.5rem 0;
+    }
+    .button-adjustments span{
+        padding: 0.5rem 3rem;
+        background-color: $brand_main_color;
+        font-weight: bold;
     }
 </style>
