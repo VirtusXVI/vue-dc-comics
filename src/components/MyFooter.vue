@@ -64,11 +64,11 @@
                         <span>FOLLOW US</span>
                     </div>
                     <div class="lower-footer-socials">
-                        <img src="../assets/img/footer-facebook.png" alt="">
-                        <img src="../assets/img/footer-twitter.png" alt="">
-                        <img src="../assets/img/footer-youtube.png" alt="">
-                        <img src="../assets/img/footer-pinterest.png" alt="">
-                        <img src="../assets/img/footer-periscope.png" alt="">
+                        <a href="#"><img src="../assets/img/footer-twitter.png" alt=""></a>                    
+                        <a href="#"><img src="../assets/img/footer-facebook.png" alt=""></a>                    
+                        <a href="#"><img src="../assets/img/footer-youtube.png" alt=""></a>                   
+                        <a href="#"><img src="../assets/img/footer-pinterest.png" alt=""></a>
+                        <a href="#"><img src="../assets/img/footer-periscope.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,7 @@ export default {
     }
     .footer-box{
         height: 380px;
-        margin: 0 1rem;
+        padding-right: 1rem;
         padding-top: 2rem;
         color: white;
     }
@@ -123,7 +123,7 @@ export default {
     }
     .footer-nav ul li a{
         text-decoration: none;
-        color: #5d5d5d;
+        color: #959595;
     }
     /* LOWER FOOTER */
     .lower-footer-adjustments{

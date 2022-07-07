@@ -2,8 +2,13 @@
   <div>
     <section>
         <div class="upper-main-adjustments">
+            <div class="upper-main-jumbotron">
+
+            </div>
             <div class="container">
-                <h1>-- Content Goes Here --</h1>
+                <div class="cards-container">
+                    <h2>ciao</h2>
+                </div>
             </div>
         </div>
     </section>
@@ -25,8 +30,14 @@ export default {
     @import "../style/variables.scss";
     @import '../style/common.scss';
     .upper-main-adjustments{
-        padding: 3rem;
         background-color: black;
         color: white;
+    }
+    .upper-main-jumbotron{
+        background-image: url(../assets/img/jumbotron.jpg);
+        height: 400px;
+    }
+    .cards-container{
+        padding: 3rem 0;
     }
 </style>

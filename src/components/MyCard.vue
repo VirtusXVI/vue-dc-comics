@@ -62,7 +62,7 @@ export default {
     @import "../style/variables.scss";
     @import '../style/common.scss';
     .lower-main-adjustments{
-        padding: 3rem;
+        padding: 3rem 4rem;
         background-color: $brand_main_color;
         color: white;
     }

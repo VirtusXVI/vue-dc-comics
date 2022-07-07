@@ -6,16 +6,16 @@
         </div>
         <nav class="nav">
             <ul>
-                <li>CHARACTERS</li>
-                <li>COMICS</li>
-                <li>MOVIES</li>
-                <li>TV</li>
-                <li>GAMES</li>
-                <li>COLLECTIBLES</li>
-                <li>VIDEOS</li>
-                <li>FANS</li>
-                <li>NEWS</li>
-                <li>SHOP</li>
+                <li><a href="">CHARACTERS</a></li>
+                <li><a href="">COMICS</a></li>
+                <li><a href="">MOVIES</a></li>
+                <li><a href="">TV</a></li>
+                <li><a href="">GAMES</a></li>
+                <li><a href="">COLLECTIBLES</a></li>
+                <li><a href="">VIDEOS</a></li>
+                <li><a href="">FANS</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">SHOP</a></li>
             </ul>
         </nav>
     </div>
@@ -33,17 +33,17 @@ export default {
     @import "../style/variables.scss";
     @import '../style/common.scss';
     .header-adjustments{
-        height: 150px;
+        height: 120px;
         padding: 1rem 0;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
     .logo{
-        width: 30%;
+        height: 90px;
     }
     .nav{
-        width: 50%;
+        width: 60%;
     }
     .nav ul{
         display: flex;
@@ -61,7 +61,7 @@ export default {
         font-weight: bold;
         height: 100%;
     }
-    img{
-        height: 80%;
+    a{
+        color: black;
     }
 </style>
