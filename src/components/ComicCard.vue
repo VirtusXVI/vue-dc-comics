@@ -40,12 +40,16 @@ import ComicData from "../assets/dc-comics.json"
     .card{
         width: calc(86% / 6);
         height: calc(100% / 2);
+        margin-bottom: 3rem;
     }
     .card-image{
-        height: 60%;
+        width: 100%;
     }
     .card-image img{
         width: 100%;
+        object-fit: cover;
+        object-position: top;
+        aspect-ratio: 1;
     }
     .card-text{
         height: 30%;
